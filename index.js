@@ -18,8 +18,8 @@ const config = {
 const client = new line.Client(config);
 
 app.get('/ping', (req, res) => {
-    console.log("Ping Pong")
-    res.send("pong");
+    console.log("Ping Pong Pong")
+    res.send("pong pong");
 });
 
 app.post('/webhook', line.middleware(config), (req, res) => {
